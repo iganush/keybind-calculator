@@ -7,7 +7,7 @@ document.addEventListener("keydown", function(e) {
         display.value += key;
     } 
     else if (key === "Enter") {
-        event.preventDefault();
+        e.preventDefault();
         try {
             display.value = eval(display.value);
         } catch (err) {
